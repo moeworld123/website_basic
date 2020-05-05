@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nurl-云盾检查</title>
+        <style>
+/*! Animate.css - http://daneden.me/animate Licensed under the MIT license */
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+#logo {
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    margin: 0 0 0.75em 0;
+    display: inline-block;
+    line-height: 1;
+    font-size:26px;
+    font-weight: 200;
+    will-change: transform;
+}
+
+#logo img {
+    max-width: 3em;
+    height: auto;
+    background: #fff;
+    border-radius: 0.6em;
+    padding: 0.4em;
+    box-shadow: 0 0.1em 0.15em -0.1em rgba(0,0,0,0.15), 0 0.2em 0.25em -0.05em rgba(0,0,0,0.1), 0 0.3em 0.3em rgba(0,0,0,0.05);
+}
+/* Main style */
+body {
+    padding: 0;
+    align-items: center;
+    font:16px/1.6 Helvetica Neue,PingFang SC,Source Han Sans SC,Source Han Sans CN,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    background:#f4f4f4;
+}
+
+body,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}h1,h2,h3,h4,h5,h6,strong{font-weight:700}a{color:#428bca;text-decoration:none}a:hover{text-decoration:underline}
+
+.warpper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    max-width: 24em;
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+    color: #333;
+}
+
+.container p {
+    animation-duration: 0.55s;
+    animation-delay:0.2s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
+
+.progress-bar-container {
+    animation-duration: 0.75s;
+    animation-delay:0.75s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    background: #fff;
+    max-width: 16em;
+    display: block;
+    height: 5px;
+    margin: 1em auto 2em auto;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: #24c7fc;
+    /*background: linear-gradient(90deg,#00aeef,#24c7fc);*/
+    display: block;
+    height: 5px;
+    border-radius: 1em;
+}
+
+.progress-bar {
+    animation: progress_bar_moving 2.5s cubic-bezier(0.65,0.05,0.36,1) infinite;
+    animation-delay:0.5s;
+    will-change: transform;
+}
+
+@keyframes progress_bar_moving {
+    0% {
+        transform: translateX(-101%);
+    }
+    
+    50% {
+        transform: translateX(0%);
+    }
+    
+    100% {
+        transform: translateX(101%);
+    }
+}
+
+footer {
+    font-size: 0.8em;
+    opacity: 0.4;
+}
+        </style>
+    </head>
+    <body>
+        <main class="warpper">
+        <div class="container">
+            <h1 id="logo"><img src="https://i.loli.net/2020/05/03/3LctQxvCVbdsKOj.jpg" alt="moes"></h1>
+            <p>萌思Moes安全加载中...</p>
+            <div class="progress-bar-container">
+            <div class="progress-bar">
+            </div>
+            </div>
+            </div>
+</main>
+    </body>
+</html>
+<!--开发者为geticer，非云课堂网授权外不可抄袭引用-->
